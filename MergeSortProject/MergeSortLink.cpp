@@ -1,7 +1,7 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<vector>
 #define T int
-//ÎŞÄæĞò×ÓĞòÁĞ¹é²¢ÅÅĞò
+//æ— é€†åºå­åºåˆ—å½’å¹¶æ’åº
 using namespace std;
 
 struct Node

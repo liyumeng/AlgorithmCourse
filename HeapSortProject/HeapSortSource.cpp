@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 
 void swap(int& a, int& b)
 {
@@ -31,7 +31,7 @@ void HeapSort(int *dat, int n)
 	for (int i = n - 1; i > 0;i--)
 	{
 		swap(dat[i], dat[0]);
-		HeapAdjust(dat, 0, i);//ÿ�μ�һ��Ԫ��
+		HeapAdjust(dat, 0, i);//每次减一个元素
 	}
 }
 void main()

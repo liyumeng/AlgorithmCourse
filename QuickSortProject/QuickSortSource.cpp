@@ -1,6 +1,6 @@
-#include<iostream>
+ï»¿#include<iostream>
 #define T int
-//¿ìËÙÅÅĞò
+//å¿«é€Ÿæ’åº
 int partition(T* dat, int begin, int end)
 {
 	int flag = dat[begin];
