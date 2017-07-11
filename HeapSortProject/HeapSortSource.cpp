@@ -12,7 +12,7 @@ void HeapAdjust(int *dat, int i, int n)
 	for (int rc = dat[i]; 2 * i + 1 < n; i = child)
 	{
 		child = 2 * i + 1;
-		if (child + 1 < n&&dat[child + 1] > dat[child])
+		if (child + 1 < n&&dat[child + 1] > dat[child]) //把孩子中最大的换上来
 			child++;
 		if (dat[child] > rc)
 		{
@@ -23,7 +23,7 @@ void HeapAdjust(int *dat, int i, int n)
 }
 void HeapSort(int *dat, int n)
 {
-	for (int i = n / 2 - 1; i >= 0; i--)
+	for (int i = n / 2 - 1; i >= 0; i--) // n/2-1是第一个非叶子节点
 	{
 		HeapAdjust(dat, i, n);
 	}
@@ -37,6 +37,7 @@ void HeapSort(int *dat, int n)
 void main()
 {
 	int dat[] = { 9,2,65,3,5,2,8,6,10,4 };
+	//从小到大排序
 	HeapSort(dat, 10);
 	for (int i = 0; i < 10; i++)
 		std::cout << dat[i] << std::endl;
